@@ -1,0 +1,22 @@
+site_name: "Módulo 7: Implantação de SAP"
+site_description: "Documentação do Módulo 7 de Sistemas de Informação"
+site_author: "Seu Nome"
+theme:
+  name: "mkdocs"
+nav:
+  - Home: index.md
+  - Aulas:
+      - "Sistemas de gestão empresarial": sistemas-gestao-empresarial.md
+      - "Gestão de processos de negócios": gestao-processos-negocios.md
+      - "Mineração de processos": mineracao-processos.md
+      - "Regras de negócio e tomada de decisão": regras-negocio-tomada-decisao.md
+      - "Avaliação e seleção de sistemas de informação": avaliacao-selecao-sistemas-informacao.md
+      - "Testes e cutover no contexto de sistemas empresariais": testes-cutover-sistemas-empresariais.md
+      - "Gestão de mudanças": gestao-mudancas.md
+      - "Governança corporativa e de dados": governanca-corporativa-dados.md
+      - "Gestão de Stakeholders": gestao-stakeholders.md
+      - "Implantação de sistemas": implantacao-sistemas.md
+      - "Estratégia e gestão de serviços de TI": estrategia-gestao-servicos-ti.md
+      - "Elaboração de relatórios": elaboracao-relatorios.md
+      - "Sistemas distribuídos": sistemas-distribuidos.md
+      - "Segurança em Sistemas distribuídos": seguranca-sistemas-distribuidos.md
