@@ -32,6 +32,10 @@
 
 ---
 
+<div class="container d-flex justify-content-center">
+    <img src="https://www.sydle.com/blog/assets/post/regras-de-negocio-5f6333be1e43744c69d995e0/importancia-regras-de-negocio.png" class="img-fluid rounded" alt="Descrição da Imagem">
+</div>
+
 <div class="container mt-4">
     <h1 class="text-primary">1. Regras de Negócio</h1>
 
@@ -116,6 +120,10 @@
     </ul>
 </div>
 
+<div class="container d-flex justify-content-center">
+    <img src="https://www.ateomomento.com.br/wp-content/uploads/2016/05/software-requisito-funcional-regra-de-negocio-requisito-nao-funcional.png" class="img-fluid rounded" alt="Descrição da Imagem">
+</div>
+
 ---
 
 <div class="container mt-4">
@@ -180,6 +188,11 @@
 
 </div>
 
+---
+<h2>Fluxo de Gestão de Regras de Negócio</h2>
+<div class="container d-flex justify-content-center">
+    <img src="https://arquivo.devmedia.com.br/REVISTAS/es/imagens/66/8/2.png" class="img-fluid rounded" alt="Descrição da Imagem">
+</div>
 ---
 
 <div class="container mt-4">
