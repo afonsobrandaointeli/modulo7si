@@ -1,0 +1,1 @@
+trazer o consultor da G2 para fazer um exemplo de relatório

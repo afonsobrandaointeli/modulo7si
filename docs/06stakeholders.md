@@ -1,0 +1,1 @@
+mapeamento de stakeholders, identificação de interesses, grau de influência, meio de atender e canais de comunicação.

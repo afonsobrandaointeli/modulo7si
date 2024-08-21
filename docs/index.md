@@ -2,6 +2,10 @@
 
 <a href="https://drive.google.com/drive/u/0/folders/1Mxdhzm6t38kHcCTrzSBdwqDMn_9tRdQL" class="btn btn-primary" target="blank_">Material de Estudo SAP B1</a>
 
+# Comunidade Discord
+
+<a href="https://discord.gg/F6gAdkYc" class="btn btn-primary" target="blank_">Entre!</a>
+
 ## Agosto
 
 <div class="card m-3">

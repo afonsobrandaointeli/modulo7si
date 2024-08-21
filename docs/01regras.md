@@ -16,6 +16,10 @@
 | 09:15 - 09:35 | Kahoot Quiz                      | Sessão de 20 minutos com quiz interativo para revisão. |
 | 09:35 - 10:30 | Aula Interativa                  | Aula de 55 minutos com atividades práticas e discussão. |
 
+---
+### Vamos fazer o Kahoot dos Autoestudos!
+
+<a href="https://kahoot.it/" class="btn btn-primary" target="blank_" style="display: block; width: 100%; text-align: center;">🏀 Kahoot!</a>
 
 ---
 
