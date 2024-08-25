@@ -40,6 +40,12 @@ Escolha 3 sistemas ERP e elabore uma planilha comparativa (veja o exemplo da ERP
 
 ---
 
+## Apresentação
+
+- Entre com seu email do Inteli
+- **Link da Videochamada:** [Clique aqui para participar](https://meet.google.com/wkh-ymci-orr)
+  - **PIN:** ‪968 685 492‬#
+
 ### Conteúdos Relacionados
 
 - Avaliação de sistemas ERP
