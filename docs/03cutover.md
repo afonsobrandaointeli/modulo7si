@@ -124,8 +124,24 @@
    - Monitoramento do sistema.
    - Suporte inicial intensivo.
 
-
-
 ## Live!
 
 Vamos agora para uma Live com a G2!
+
+# Autoestudo Ponderado (2 pontos)
+
+### Pesquise na Internet um exemplo de Plano de Cutover.
+
+1. Descreva a que projeto se refere e inclua seu link.
+2. Explique quais são seus principais elementos.
+3. Identifique e liste 3 pontos positivos e 3 pontos negativos deste plano.
+
+### Entrega
+
+Deverá ser feita em Markdown no github, **de forma individual**! 
+
+**Data de Entrega**: 08/09/2024
+
+### Vídeo de Auxílio
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oZexFdrojko?si=rNV2z3zLUNN0FNr1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
