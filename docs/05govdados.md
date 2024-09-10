@@ -85,6 +85,6 @@ CREATE TABLE loans (
 
 Elabore um diagrama entidade-relacionamento que contemple as principais entidades relacionadas aos dados mestres que seu grupo identificou no projeto.
 
-Utilize o sql Designer para fazer a ponderada, verifique os dados mestres e crie asentidades e relacionamentos.
+Utilize o sql Designer para fazer a ponderada, verifique os dados mestres e crie as entidades e relacionamentos.
 
 ## Entrega Individual na data 15 de setembro de 2024
