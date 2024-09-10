@@ -121,12 +121,114 @@
     
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#governanca-corporativa-e-de-dados" class="nav-link">Governança Corporativa e de Dados</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#modelo-entidade-relacionamento" class="nav-link">Modelo Entidade Relacionamento</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#vamos-para-uma-pratica-sql-designer" class="nav-link">Vamos para uma prática! SQL Designer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ponderada" class="nav-link">Ponderada</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#entrega-individual-na-data-15-de-setembro-de-2024" class="nav-link">Entrega Individual na data 15 de setembro de 2024</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
-<p>Fluxo, papéis, </p></div>
+<h1 id="governanca-corporativa-e-de-dados">Governança Corporativa e de Dados</h1>
+<iframe src="https://docs.google.com/presentation/d/10x3izehpivOdj3dD_tR89eq6XaEUL4s4/embed?start=false&loop=false&delayms=3000" frameborder="0" width="768" height="461" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<hr />
+<h1 id="modelo-entidade-relacionamento">Modelo Entidade Relacionamento</h1>
+<p><img alt="imagem" src="https://leonardofonseca.com.br/wp-content/uploads/2021/04/image.png" /></p>
+<hr />
+<h1 id="vamos-para-uma-pratica-sql-designer">Vamos para uma prática! <a href="https://sql.toad.cz/">SQL Designer</a></h1>
+<h3 id="cenario-sistema-de-biblioteca-com-categorias-n-para-n">Cenário: Sistema de Biblioteca com Categorias (N para N)</h3>
+<h4 id="tabelas-e-relacionamentos">Tabelas e Relacionamentos</h4>
+<pre><code class="language-sql">CREATE TABLE authors (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    birthdate DATE
+);
+
+CREATE TABLE categories (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE books (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author_id INT,
+    published_year INT,
+    FOREIGN KEY (author_id) REFERENCES authors(id)
+);
+
+CREATE TABLE book_categories (
+    book_id INT,
+    category_id INT,
+    PRIMARY KEY (book_id, category_id),
+    FOREIGN KEY (book_id) REFERENCES books(id),
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
+
+CREATE TABLE members (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    join_date DATE
+);
+
+CREATE TABLE loans (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    book_id INT,
+    member_id INT,
+    loan_date DATE,
+    return_date DATE,
+    FOREIGN KEY (book_id) REFERENCES books(id),
+    FOREIGN KEY (member_id) REFERENCES members(id)
+);
+</code></pre>
+<h3 id="descricao-das-tabelas">Descrição das Tabelas</h3>
+<ol>
+<li><strong>Tabela <code>authors</code></strong>: Armazena os dados dos autores.</li>
+<li><strong>Tabela <code>categories</code></strong>: Armazena os dados das categorias de livros (ex: Ficção, Ciência, História).</li>
+<li><strong>Tabela <code>books</code></strong>: Contém os livros com seus respectivos títulos, autor e ano de publicação.</li>
+<li><strong>Tabela <code>book_categories</code></strong>: Esta tabela intermediária faz a relação N para N entre <strong>livros</strong> e <strong>categorias</strong>, já que um livro pode ter várias categorias e uma categoria pode conter vários livros.</li>
+<li><strong>Tabela <code>members</code></strong>: Contém os membros da biblioteca.</li>
+<li><strong>Tabela <code>loans</code></strong>: Armazena o histórico de empréstimos, com as datas de empréstimo e devolução.</li>
+</ol>
+<h3 id="relacionamentos">Relacionamentos</h3>
+<ul>
+<li>Um <strong>autor</strong> pode ter vários <strong>livros</strong> (um-para-muitos entre <code>authors</code> e <code>books</code>).</li>
+<li>Um <strong>livro</strong> pode pertencer a várias <strong>categorias</strong>, e uma <strong>categoria</strong> pode conter vários <strong>livros</strong>. Isso cria a relação N para N, que é gerenciada pela tabela intermediária <code>book_categories</code>.</li>
+<li>Um <strong>membro</strong> pode emprestar vários <strong>livros</strong> (um-para-muitos entre <code>members</code> e <code>loans</code>).</li>
+<li>Um <strong>livro</strong> pode ser emprestado várias vezes (um-para-muitos entre <code>books</code> e <code>loans</code>).</li>
+</ul>
+<h3 id="criando-o-diagrama-no-wwwsqldesigner">Criando o Diagrama no wwwsqldesigner</h3>
+<ol>
+<li>Crie as tabelas: <strong>authors</strong>, <strong>books</strong>, <strong>categories</strong>, <strong>book_categories</strong>, <strong>members</strong>, e <strong>loans</strong>.</li>
+<li>Conecte as tabelas usando as chaves estrangeiras.</li>
+<li>Para a relação N para N, conecte a tabela <code>book_categories</code> com <code>books</code> e <code>categories</code>.</li>
+</ol>
+<h1 id="ponderada">Ponderada</h1>
+<p>Elabore um diagrama entidade-relacionamento que contemple as principais entidades relacionadas aos dados mestres que seu grupo identificou no projeto.</p>
+<p>Utilize o sql Designer para fazer a ponderada, verifique os dados mestres e crie asentidades e relacionamentos.</p>
+<h2 id="entrega-individual-na-data-15-de-setembro-de-2024">Entrega Individual na data 15 de setembro de 2024</h2></div>
             </div>
         </div>
 
