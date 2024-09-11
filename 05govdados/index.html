@@ -155,6 +155,27 @@
 <hr />
 <h1 id="modelo-entidade-relacionamento">Modelo Entidade Relacionamento</h1>
 <p><img alt="imagem" src="https://leonardofonseca.com.br/wp-content/uploads/2021/04/image.png" /></p>
+<p>A <strong>cardinalidade</strong> em modelagem de banco de dados se refere à relação entre entidades, indicando o número de ocorrências que uma entidade pode ter associada a outra entidade em um relacionamento.</p>
+<h3 id="cardinalidade-minima">Cardinalidade Mínima</h3>
+<p>A <strong>cardinalidade mínima</strong> define <strong>o número mínimo de vezes que uma entidade pode se associar a outra</strong> em um relacionamento. Isso representa a obrigatoriedade ou opcionalidade da relação. Existem dois valores possíveis para a cardinalidade mínima:
+1. <strong>0 (opcional)</strong>: Indica que uma entidade pode não ter nenhuma associação com outra. Ou seja, a participação dela no relacionamento é opcional.
+2. <strong>1 (obrigatória)</strong>: Indica que uma entidade <strong>deve</strong> ter pelo menos uma associação com outra. A participação é obrigatória.</p>
+<p><strong>Exemplo</strong>:
+- Em um relacionamento entre <code>Alunos</code> e <code>Disciplinas</code>, a cardinalidade mínima 0 entre <code>Alunos</code> e <code>Disciplinas</code> pode indicar que um aluno pode não estar matriculado em nenhuma disciplina.</p>
+<h3 id="cardinalidade-maxima">Cardinalidade Máxima</h3>
+<p>A <strong>cardinalidade máxima</strong> define <strong>o número máximo de vezes que uma entidade pode se associar a outra</strong> em um relacionamento. Isso descreve o limite superior de quantas vezes uma entidade pode se conectar à outra.</p>
+<p>As opções mais comuns de cardinalidade máxima são:
+1. <strong>1</strong>: Indica que uma entidade pode se associar com <strong>no máximo uma</strong> outra entidade.
+2. <strong>N</strong> (ou muitos): Indica que uma entidade pode se associar a <strong>múltiplas</strong> instâncias de outra entidade.</p>
+<p><strong>Exemplo</strong>:
+- Em um relacionamento entre <code>Professores</code> e <code>Disciplinas</code>, uma cardinalidade máxima de 1 pode indicar que um professor só pode ministrar uma disciplina, enquanto uma cardinalidade de N indica que o professor pode ministrar várias disciplinas.</p>
+<h3 id="exemplo-completo">Exemplo Completo</h3>
+<p>Se tivermos um relacionamento entre <code>Funcionário</code> e <code>Departamento</code>:</p>
+<ul>
+<li><strong>Cardinalidade mínima de 0 e máxima de 1</strong> no lado do <code>Departamento</code> indica que um funcionário pode ou não estar associado a um departamento (participação opcional) e, se estiver, é com apenas um departamento.</li>
+<li><strong>Cardinalidade mínima de 1 e máxima de N</strong> no lado do <code>Departamento</code> significa que cada departamento deve ter ao menos um funcionário e pode ter muitos.</li>
+</ul>
+<p>Assim, as cardinalidades mínima e máxima ajudam a descrever a <strong>natureza e as restrições</strong> dos relacionamentos entre entidades em um modelo de banco de dados.</p>
 <hr />
 <h1 id="vamos-para-uma-pratica-sql-designer">Vamos para uma prática! <a href="https://sql.toad.cz/">SQL Designer</a></h1>
 <h3 id="cenario-sistema-de-biblioteca-com-categorias-n-para-n">Cenário: Sistema de Biblioteca com Categorias (N para N)</h3>
