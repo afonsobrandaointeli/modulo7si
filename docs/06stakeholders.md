@@ -130,6 +130,8 @@ No ambiente corporativo contemporâneo, a gestão eficaz dos stakeholders é ess
     </table>
 </div>
 
+---
+
 # Elementos que Devem Estar Presentes no Artefato de Plano de Cutover Final
 
 ### **Equipe Envolvida**
