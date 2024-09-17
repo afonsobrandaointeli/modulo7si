@@ -6,6 +6,34 @@
 
 ![imagem](https://leonardofonseca.com.br/wp-content/uploads/2021/04/image.png)
 
+A **cardinalidade** em modelagem de banco de dados se refere à relação entre entidades, indicando o número de ocorrências que uma entidade pode ter associada a outra entidade em um relacionamento.
+
+### Cardinalidade Mínima
+A **cardinalidade mínima** define **o número mínimo de vezes que uma entidade pode se associar a outra** em um relacionamento. Isso representa a obrigatoriedade ou opcionalidade da relação. Existem dois valores possíveis para a cardinalidade mínima:
+1. **0 (opcional)**: Indica que uma entidade pode não ter nenhuma associação com outra. Ou seja, a participação dela no relacionamento é opcional.
+2. **1 (obrigatória)**: Indica que uma entidade **deve** ter pelo menos uma associação com outra. A participação é obrigatória.
+
+**Exemplo**:
+- Em um relacionamento entre `Alunos` e `Disciplinas`, a cardinalidade mínima 0 entre `Alunos` e `Disciplinas` pode indicar que um aluno pode não estar matriculado em nenhuma disciplina.
+
+### Cardinalidade Máxima
+A **cardinalidade máxima** define **o número máximo de vezes que uma entidade pode se associar a outra** em um relacionamento. Isso descreve o limite superior de quantas vezes uma entidade pode se conectar à outra.
+
+As opções mais comuns de cardinalidade máxima são:
+1. **1**: Indica que uma entidade pode se associar com **no máximo uma** outra entidade.
+2. **N** (ou muitos): Indica que uma entidade pode se associar a **múltiplas** instâncias de outra entidade.
+
+**Exemplo**:
+- Em um relacionamento entre `Professores` e `Disciplinas`, uma cardinalidade máxima de 1 pode indicar que um professor só pode ministrar uma disciplina, enquanto uma cardinalidade de N indica que o professor pode ministrar várias disciplinas.
+
+### Exemplo Completo
+Se tivermos um relacionamento entre `Funcionário` e `Departamento`:
+
+- **Cardinalidade mínima de 0 e máxima de 1** no lado do `Departamento` indica que um funcionário pode ou não estar associado a um departamento (participação opcional) e, se estiver, é com apenas um departamento.
+- **Cardinalidade mínima de 1 e máxima de N** no lado do `Departamento` significa que cada departamento deve ter ao menos um funcionário e pode ter muitos.
+
+Assim, as cardinalidades mínima e máxima ajudam a descrever a **natureza e as restrições** dos relacionamentos entre entidades em um modelo de banco de dados.
+
 ---
 # Vamos para uma prática! [SQL Designer](https://sql.toad.cz/)
 
